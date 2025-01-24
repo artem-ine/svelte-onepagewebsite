@@ -1,0 +1,46 @@
+{
+  "id": "navbar",
+  "type": "SharedSlice",
+  "name": "Navbar",
+  "description": "Navbar",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "home": {
+          "type": "Link",
+          "config": {
+            "label": "home",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "select": null
+          }
+        },
+        "nav_links": {
+          "type": "Group",
+          "config": {
+            "label": "nav_links",
+            "repeat": true,
+            "fields": {
+              "link": {
+                "type": "Link",
+                "config": {
+                  "label": "link",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "select": null
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
